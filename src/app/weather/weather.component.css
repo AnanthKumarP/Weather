@@ -1,0 +1,20 @@
+h2 {
+  text-align: center;
+}
+.row {
+  margin: 10px;
+}
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  text-align: center;
+  padding: 45px;
+  /* background-color: dodgerblue; */
+}
+.card-body {
+  text-align: center;
+}
+.btn {
+  margin-bottom: 3px;
+}

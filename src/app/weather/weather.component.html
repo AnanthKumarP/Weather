@@ -1,0 +1,91 @@
+<h2>Welcome to Weather App</h2>
+<div class="container">
+    <div class="row">
+        <div *ngIf="index != 0" style="text-align:center"><label>Add/Edit City : <input type="text" name="city" #city
+                    placeholder="Enter City"></label>&nbsp;<button class="btn btn-primary btn-sm"
+                (click)="updateCity(city)">Add</button>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(1)">
+                <div>{{ panelList[0].wind == '' ? 'Click Here' : 'Wind: '+ panelList[0].wind }}</div>
+                <div>{{ panelList[0].temperature == '' ? '' : 'Temperature: '+ panelList[0].temperature }}</div>
+                <div>{{ panelList[0].description == '' ? '' : 'Description: '+ panelList[0].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[0].wind != '' && panelList[0].temperature != '' && panelList[0].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(2)">
+                <div>{{ panelList[1].wind == '' ? 'Click Here' : 'Wind: '+ panelList[1].wind }}</div>
+                <div>{{ panelList[1].temperature == '' ? '' : 'Temperature: '+ panelList[1].temperature }}</div>
+                <div>{{ panelList[1].description == '' ? '' : 'Description: '+ panelList[1].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[1].wind != '' && panelList[1].temperature != '' && panelList[1].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(3)">
+                <div>{{ panelList[2].wind == '' ? 'Click Here' : 'Wind: '+ panelList[2].wind }}</div>
+                <div>{{ panelList[2].temperature == '' ? '' : 'Temperature: '+ panelList[2].temperature }}</div>
+                <div>{{ panelList[2].description == '' ? '' : 'Description: '+ panelList[2].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[2].wind != '' && panelList[2].temperature != '' && panelList[2].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(4)">
+                <div>{{ panelList[3].wind == '' ? 'Click Here' : 'Wind: '+ panelList[3].wind }}</div>
+                <div>{{ panelList[3].temperature == '' ? '' : 'Temperature: '+ panelList[3].temperature }}</div>
+                <div>{{ panelList[3].description == '' ? '' : 'Description: '+ panelList[3].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[3].wind != '' && panelList[3].temperature != '' && panelList[3].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(5)">
+                <div>{{ panelList[4].wind == '' ? 'Click Here' : 'Wind: '+ panelList[4].wind }}</div>
+                <div>{{ panelList[4].temperature == '' ? '' : 'Temperature: '+ panelList[4].temperature }}</div>
+                <div>{{ panelList[4].description == '' ? '' : 'Description: '+ panelList[4].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[4].wind != '' && panelList[4].temperature != '' && panelList[4].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(6)">
+                <div>{{ panelList[5].wind == '' ? 'Click Here' : 'Wind: '+ panelList[5].wind }}</div>
+                <div>{{ panelList[5].temperature == '' ? '' : 'Temperature: '+ panelList[5].temperature }}</div>
+                <div>{{ panelList[5].description == '' ? '' : 'Description: '+ panelList[5].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[5].wind != '' && panelList[5].temperature != '' && panelList[5].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(7)">
+                <div>{{ panelList[6].wind == '' ? 'Click Here' : 'Wind: '+ panelList[6].wind }}</div>
+                <div>{{ panelList[6].temperature == '' ? '' : 'Temperature: '+ panelList[6].temperature }}</div>
+                <div>{{ panelList[6].description == '' ? '' : 'Description: '+ panelList[6].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[6].wind != '' && panelList[6].temperature != '' && panelList[6].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(8)">
+                <div>{{ panelList[7].wind == '' ? 'Click Here' : 'Wind: '+ panelList[7].wind }}</div>
+                <div>{{ panelList[7].temperature == '' ? '' : 'Temperature: '+ panelList[7].temperature }}</div>
+                <div>{{ panelList[7].description == '' ? '' : 'Description: '+ panelList[7].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[7].wind != '' && panelList[7].temperature != '' && panelList[7].description != '' ">Edit</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info bg-gradient" (click)="addCity(9)">
+                <div>{{ panelList[8].wind == '' ? 'Click Here' : 'Wind: '+ panelList[8].wind }}</div>
+                <div>{{ panelList[8].temperature == '' ? '' : 'Temperature: '+ panelList[8].temperature }}</div>
+                <div>{{ panelList[8].description == '' ? '' : 'Description: '+ panelList[8].description }}</div>
+                <button class="btn btn-outline-warning btn-sm"
+                    *ngIf="panelList[8].wind != '' && panelList[8].temperature != '' && panelList[8].description != '' ">Edit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
